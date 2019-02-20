@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+   <meta charset='UTF-8' />
+   <meta name="description" content="SkillUP Homework6">
+   <meta name="keywords" content="HTML form, HTML meta tag, CSS">
+   <meta name="author" content="Nelea Turicenco">
+   <meta name="view port" content="width=device width, initial-scale=1.0">
+   <title>HTML Forms</title>
+   <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+   <form action="/action_page.php" class="form-group">
+      <div class="form-field">
+         <label for="yourname">Your Name</label>
+         <input type="text" name="yourname" required>
+      </div>
+      <div class="form-field">
+         <label for="email">Your Email</label>
+         <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      </div>
+      <fieldset class="form-field">
+         <legend>What's this all about ?</legend>
+         <div>
+            <input id="checkbox1" type="checkbox" name="checkbox1">
+            <label for="checkbox1">Say Hello</label>
+
+         </div>
+         <div>
+            <input id="checkbox2" type="checkbox" name="checkbox2">
+            <label for="checkbox2">Complain</label>
+
+         </div>
+         <div>
+            <input id="checkbox3" type="checkbox" name="checkbox3">
+            <label for="checkbox3">Share a joke</label>
+
+         </div>
+      </fieldset>
+      <div class="form-field">
+         <label for="subject">Subject</label>
+         <select name="subject" id="subject">
+            <optgroup>
+               <option value="" disabled>select your subject</option>
+               <option value="HTML">HTML</option>
+               <option value="CSS">CSS</option>
+               <option value="Java_Script">Java_Script</option>
+            </optgroup>
+            <optgroup>
+               <option value="toyota">Math</option>
+               <option value="lexus">Chemistry</option>
+               <option value="honda">Physics</option>
+            </optgroup>
+         </select>
+      </div>
+      <div class="form-field">
+         <label for="message">Your Message</label>
+         <textarea name="message" id="message"></textarea>
+      </div>
+
+      <input type="submit" value="SEND">
+   </form>
+</body>
