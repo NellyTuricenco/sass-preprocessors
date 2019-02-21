@@ -8,18 +8,18 @@
    <meta name="author" content="Nelea Turicenco">
    <meta name="view port" content="width=device width, initial-scale=1.0">
    <title>HTML Forms</title>
-   <link rel="stylesheet" href="./styles.scss" />
+   <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
    <form action="/action_page.php" class="form-group">
       <div class="form-field">
          <label for="yourname">Your Name</label>
-         <input type="text" name="yourname" required>
+         <input type="text" id="yourname" name="yourname" required>
       </div>
       <div class="form-field">
          <label for="email">Your Email</label>
-         <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+         <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
       </div>
       <fieldset class="form-field">
          <legend>What's this all about ?</legend>
